@@ -12,6 +12,7 @@
   "bin": [
     "bin/docker_start.sh",
     "bin/docker_stop.sh",
-    "bin/docker_ssh.sh"
+    "bin/docker_ssh.sh",
+    "bin/docker_remove.sh"
   ]
 }
