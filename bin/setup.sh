@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 
-echo "Run composer setup stuff"
+# Create a .env file if it is not already existing
+touch .testing_env

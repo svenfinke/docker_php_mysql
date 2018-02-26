@@ -1,15 +1,18 @@
 {
-    "name": "svenfinke/docker_php_mysql",
-    "description": "A basic docker container setup for your application",
-    "type": "project",
-    "authors": [
-        {
-            "name": "Sven Finke",
-            "email": "sven.finke@googlemail.com"
-        }
-    ],
-    "require": {},
-    "bin": [
-        "bin/start.sh"
-    ]
+  "name": "svenfinke/docker_php_mysql",
+  "description": "A basic docker container setup for your application",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Sven Finke",
+      "email": "sven.finke@googlemail.com"
+    }
+  ],
+  "require": {},
+  "bin": [
+    "bin/start.sh"
+  ],
+  "scripts": {
+    "post-update-cmd": "sh bin/setup.sh"
+  }
 }
