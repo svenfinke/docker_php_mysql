@@ -10,9 +10,8 @@
   ],
   "require": {},
   "bin": [
-    "bin/start.sh"
-  ],
-  "scripts": {
-    "post-update-cmd": "sh bin/setup.sh"
-  }
+    "bin/docker_start.sh",
+    "bin/docker_stop.sh",
+    "bin/docker_ssh.sh"
+  ]
 }
