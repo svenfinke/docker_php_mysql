@@ -6,5 +6,5 @@ if [ -f .env ]; then
     set +o allexport
 fi
 cd vendor/svenfinke/docker_php_mysql/src;
-docker-compose down;
+docker-compose stop;
 cd ../../../..;
