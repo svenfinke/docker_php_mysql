@@ -7,5 +7,5 @@ if [ -f .env ]; then
 fi
 
 cd vendor/svenfinke/docker_php_mysql/src;
-docker-compose exec php-fpm sh;
+docker-compose exec $1 $2;
 cd ../../../..;
