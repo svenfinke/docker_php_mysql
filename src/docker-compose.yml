@@ -6,7 +6,6 @@ services:
 
     mysql:
       image: mysql:8.0
-      container_name: docker-symfony4-mysql
       working_dir: /application
       volumes:
         - ../../../..:/application
@@ -20,7 +19,6 @@ services:
 
     webserver:
       image: nginx:alpine
-      container_name: docker-symfony4-webserver
       working_dir: /application
       volumes:
           - ../../../..:/application
@@ -30,7 +28,6 @@ services:
 
     php-fpm:
       build: phpdocker/php-fpm
-      container_name: docker-symfony4-php-fpm
       working_dir: /application
       volumes:
         - ../../../..:/application
