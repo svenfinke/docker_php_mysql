@@ -12,6 +12,13 @@ The docker setup is automatically loading the .env file from your project root. 
 - MYSQL_USER
 - MYSQL_PASSWORD
 
+The ports which are exposed to the host can be configured with this variables:
+
+- HOST_WEBSERVER_PORT
+- HOST_MYSQL_PORT
+
+Ports are being used to ensure that Mac is also supported.
+
 # Managing the containers
 
 There are a few scripts to start/stop the containers:
